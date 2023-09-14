@@ -83,8 +83,8 @@ export default new Vuex.Store({
     },
     async getCityWeather({commit, state} , {cardInfo}) {
       const weatherService = new WeatherService();
-      const cityWeather = await weatherService.getCard(cardInfo)
-      commit({type:'setCurrCard', cityWeather})
+      const card = await weatherService.getCard(cardInfo)
+      commit({type:'setCurrCard', card})
     }
 
   }

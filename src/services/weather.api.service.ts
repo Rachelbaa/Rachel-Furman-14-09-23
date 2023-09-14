@@ -4,7 +4,7 @@ import { IDailyForecasts, IMainWeather, ISearchResult } from '@/interfaces/weath
 
 export class WeatherAPIService {
 
-    private apiKey: string = 'wqE3V5s4Zvv4efuLLuyfFbGJvfXJm3p4';
+    private apiKey: string = 'eokdHD39sJEVmIcVIjDBQkoO9Nu42fx9';
     private defaultUrl: string = 'https://dataservice.accuweather.com';
 
     async getlocationData(latitude:number, longitude:number) {

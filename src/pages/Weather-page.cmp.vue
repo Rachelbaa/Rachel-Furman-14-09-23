@@ -29,7 +29,7 @@ export default {
   created() {
     this.loadWeatherCard()
     EventBus.$on('setNewCard', () => {
-      this.loadWeatherCard()
+      this.weatherCard = this.$store.getters.currCard;
     });
   },
   methods: {
