@@ -1,0 +1,34 @@
+
+@mixin for-narrow-layout {
+  @media (min-width: $break-narrow) {
+    @content;
+  }
+}
+
+@mixin for-normal-layout {
+  @media (min-width: $break-normal) {
+    @content;
+  }
+}
+
+@mixin for-wide-layout {
+  @media (min-width: $break-wide) {
+    @content;
+  }
+}
+
+
+
+
+
+@mixin for-Hnarrow-layout {
+  @media (min-height: $break-Hnarrow) {
+    @content;
+  }
+}
+
+@mixin for-Hnormal-layout {
+  @media (min-height: $break-Hnormal) {
+    @content;
+  }
+}
